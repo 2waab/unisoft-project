@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Cairo", sans-serif;
+}
+body {
+    background-color: #eee;
+}
+ul {
+    list-style: none;
+}
+/* Start Header */
+.header {
+    min-height: 65px;
+}
+.nav-link {
+    font-size: 13px !important;
+    color: #000;
+}
+.nav-link i {
+    font-size: 15px;
+    margin-right: 10px;
+    position: relative;
+    top: 3px;
+}
+.logo {
+    font-weight: bold;
+    font-size: 22px !important;
+}
+.logo span {
+    color: #2196f3;
+}
+/* End Header */
+/* Start user info */
+.user-info {
+    position: relative;
+    margin-top: 90px !important;
+}
+.user-info .edit {
+    position: absolute;
+    top: 20px;
+    left: 80px;
+    background-color: #2196f3;
+    color: #fff;
+    width: fit-content;
+    padding: 5px 10px;
+    font-size: 12px;
+    user-select: none;
+    cursor: pointer;
+}
+.user-info img {
+    width: 100px;
+}
+.user-info .info {
+    margin-right: 20px;
+    width: 80%;
+}
+.user-info .info .name {
+    font-weight: bold;
+    font-size: 22px;
+}
+.info .col-1,
+.info .col-2 {
+    width: 30%;
+}
+.info .col p {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+.info .col p span {
+    margin-right: 20px;
+    font-weight: bold;
+}
+/* End user info */
+/* Start Links */
+.links li {
+    color: #444;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 0;
+    position: relative;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.links li:not(:first-child) {
+    margin-right: 40px;
+}
+.links li.active {
+    color: #2196f3;
+}
+.links li:hover {
+    color: #2196f3;
+}
+.links li::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    background-color: #2196f3;
+    height: 1px;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: 0.3s;
+}
+.links li.active:after {
+    width: 100%;
+}
+.links li:hover:after {
+    width: 100%;
+}
+/* End Links */
+/* Start Dashboard */
+.main-hading {
+    color: #e91e63;
+    font-size: 16px;
+}
+.col p {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+.col p span {
+    margin-right: 20px;
+    font-weight: bold;
+}
+/* End Dashboard */
