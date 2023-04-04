@@ -167,6 +167,24 @@ aside.close ul {
     width: 100%;
 }
 /* End Links */
+/* Start Dashboard Info */
+.dashboard-info p {
+    font-size: 14px;
+}
+.dashboard-info .one .col .row {
+    margin-bottom: 10px; 
+}
+.dashboard-info .row {
+    width: 100%;
+    margin-right: 0 !important;
+}
+.dashboard-info .row div {
+    min-height: 40px;
+}
+.dashboard-info .one .col .row p:last-child {
+    font-weight: bold;
+}
+/* End Dashboard Info */
 /* Responsive Divase */
 @media (max-width: 991px) {
     aside .top .menuIcon {
@@ -212,5 +230,16 @@ aside.close ul {
     }
     .links ul li {
         font-size: 10px;
+    }
+    .dashboard-info .row {
+        flex-direction: column;
+        width: 100%;
+    }
+    .dashboard-info .row div {
+        width: 100%;
+        min-height: 100%;
+    }
+    .dashboard-info .row div .row .col .row {
+        flex-direction: row;
     }
 }
