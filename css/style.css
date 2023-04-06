@@ -59,7 +59,7 @@ aside ul li span:first-child {
 }
 aside ul li:hover {
     padding-right: 10px;
-    background-color: #0d6efd;
+    background-color: #0dcaf0;
 }
 aside.close .logo i,
 aside.close .logo,
@@ -152,7 +152,7 @@ aside.close ul {
     position: absolute;
     width: 0%;
     height: 1px;
-    background-color: #0d6efd;
+    background-color: #0dcaf0;
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
@@ -160,7 +160,7 @@ aside.close ul {
 }
 .links ul li.active,
 .links ul li:hover {
-    color: #0d6efd !important;
+    color: #0dcaf0 !important;
 }
 .links ul li.active::after,
 .links ul li:hover::after {
@@ -168,20 +168,25 @@ aside.close ul {
 }
 /* End Links */
 /* Start Dashboard Info */
-.dashboard-info p {
+.dashboard-info p,
+.login-card p {
     font-size: 14px;
 }
-.dashboard-info .one .col .row {
+.dashboard-info .one .col .row,
+.login-card .one .col .row {
     margin-bottom: 10px; 
 }
-.dashboard-info .row {
+.dashboard-info .row,
+.login-card .row {
     width: 100%;
     margin-right: 0 !important;
 }
-.dashboard-info .row div {
+.dashboard-info .row div,
+.login-card .row div {
     min-height: 40px;
 }
-.dashboard-info .one .col .row p:last-child {
+.dashboard-info .one .col .row p:last-child,
+.login-card .one .col .row p:last-child {
     font-weight: bold;
 }
 /* End Dashboard Info */
@@ -209,7 +214,6 @@ aside.close ul {
         margin-left: 0;
     }
     .user-info .name {
-        /* text-align: center; */
         margin-top: 20px;
     }
     .user-info .text,
@@ -231,15 +235,18 @@ aside.close ul {
     .links ul li {
         font-size: 10px;
     }
-    .dashboard-info .row {
+    .dashboard-info .row,
+    .login-card .row {
         flex-direction: column;
         width: 100%;
     }
-    .dashboard-info .row div {
+    .dashboard-info .row div,
+    .login-card .row div {
         width: 100%;
         min-height: 100%;
     }
-    .dashboard-info .row div .row .col .row {
+    .dashboard-info .row div .row .col .row,
+    .login-card .row div .row .col .row {
         flex-direction: row;
     }
 }
